@@ -135,7 +135,7 @@ h3 {
           {% if cur_artifacts[solr_artifact] %}
             <tr><td>{{solr_artifact.capitalize()}}</td><td><a href='/tests/artifacts/{{test['test_id']}}/{{cur_artifacts[solr_artifact]['artifact_type']}}/{{cur_artifacts[solr_artifact]['name']}}'>{{link_title}}</a></td></tr>
           {% else %}
-            <tr><td>Create table script</td><td>{{link_title}} currently unavailable...</a></td></tr>
+            <tr><td>{{solr_artifact.capitalize()}}</td><td>{{link_title}} currently unavailable...</a></td></tr>
           {% endif %}
         {% endif %}
       {% endfor %}
